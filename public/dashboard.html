@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TDST HOA System - Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <script defer src="src/dashboard.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">TDST HOA System Dashboard</h1>
+    <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 px-3 py-1 rounded">
+      Logout
+    </button>
+  </header>
+  <main class="flex-grow p-6">
+    <section id="welcomeSection" class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Welcome, <span id="userName">User</span></h2>
+      <p>Your role: <span id="userRole">Resident</span></p>
+    </section>
+
+    <section id="residentDashboard" class="hidden">
+      <h3 class="text-xl font-semibold mb-4">Resident Dashboard</h3>
+      <div>
+        <h4 class="font-semibold mb-2">Billing / Account Statements</h4>
+        <div id="billingInfo" class="bg-white p-4 rounded shadow">
+          <table class="min-w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="border border-gray-300 px-4 py-2 text-left">Month</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Amount Due</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
+              </tr>
+            </thead>
+            <tbody id="billingTableBody">
+              <!-- Billing rows will be inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mt-6">
+        <h4 class="font-semibold mb-2">Service Requests</h4>
+        <div id="serviceRequests" class="bg-white p-4 rounded shadow">
+          <table class="min-w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="border border-gray-300 px-4 py-2 text-left">Request Date</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Issue</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">Admin Reply</th>
+              </tr>
+            </thead>
+            <tbody id="serviceRequestsTableBody">
+              <!-- Service request rows will be inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="adminDashboard" class="hidden">
+      <h3 class="text-xl font-semibold mb-4">Admin & Treasurer Dashboard</h3>
+      <div>
+        <h4 class="font-semibold mb-2">Manage Residents</h4>
+        <div id="manageResidents" class="bg-white p-4 rounded shadow"></div>
+      </div>
+      <div class="mt-6">
+        <h4 class="font-semibold mb-2">Billing Management</h4>
+        <div id="billingManagement" class="bg-white p-4 rounded shadow"></div>
+      </div>
+      <div class="mt-6">
+        <h4 class="font-semibold mb-2">Service Requests Management</h4>
+        <div id="serviceRequestsManagement" class="bg-white p-4 rounded shadow"></div>
+      </div>
+      <div class="mt-6">
+        <h4 class="font-semibold mb-2">Reports & Charts</h4>
+        <div id="reportsCharts" class="bg-white p-4 rounded shadow"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
