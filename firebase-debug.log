@@ -1,0 +1,10 @@
+[debug] [2025-04-30T08:01:49.858Z] ----------------------------------------------------------------------
+[debug] [2025-04-30T08:01:49.859Z] Command:       /usr/local/share/nvm/versions/node/v20.12.1/bin/node /project/sandbox/user-workspace/node_modules/.bin/firebase login
+[debug] [2025-04-30T08:01:49.859Z] CLI Version:   12.4.7
+[debug] [2025-04-30T08:01:49.859Z] Platform:      linux
+[debug] [2025-04-30T08:01:49.859Z] Node Version:  v20.12.1
+[debug] [2025-04-30T08:01:49.860Z] Time:          Wed Apr 30 2025 08:01:49 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-30T08:01:49.860Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
