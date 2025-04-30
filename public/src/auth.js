@@ -8,13 +8,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
 
 const firebaseConfig = {
-  // TODO: Replace with your Firebase project config
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyAI0NLTFotWX4uRbcKMn3PCe-8-jB5I-Iw",
+  authDomain: "tdst-hoa-system-b6029.firebaseapp.com",
+  projectId: "tdst-hoa-system-b6029",
+  storageBucket: "tdst-hoa-system-b6029.firebasestorage.app",
+  messagingSenderId: "589053380799",
+  appId: "1:589053380799:web:e15f85149866e22d4e9e0a",
 };
 
 const app = initializeApp(firebaseConfig);
